@@ -6,7 +6,7 @@
 name: JSTootsi
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: A left and right brain problem solver who engineers software and bleeds JavaScript
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars1.githubusercontent.com/u/1013085?v=3&s=460
@@ -19,14 +19,14 @@ avatar: https://avatars1.githubusercontent.com/u/1013085?v=3&s=460
 footer-links:
   dribbble:
   email: rvbsanjose@gmail.com
-  facebook:
+  facebook: richard.vanbreemen
   flickr:
   github: rvbsanjose
   instagram:
-  linkedin:
+  linkedin: in/richardvanbreemen
   pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: 
+  twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
 # Your disqus shortname, entering this will enable commenting on posts
