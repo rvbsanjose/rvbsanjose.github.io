@@ -6,6 +6,7 @@ title: Eventing system mix-in that adds .trigger() and .on() to any input object
 Make an eventing system mix-in that adds .trigger() and .on() to any input object.
 
 Example usage:
+
     var obj = mixEvents({ name: 'Alice', age: 30 });
     obj.on('ageChange', function(){
       console.log('Age changed');
