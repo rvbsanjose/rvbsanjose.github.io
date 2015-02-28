@@ -7,11 +7,15 @@ Make an eventing system mix-in that adds .trigger() and .on() to any input objec
 
 Example usage:
     var obj = mixEvents({ name: 'Alice', age: 30 });
+
     obj.on('ageChange', function(){
       console.log('Age changed');
     });
+
     obj.age++;
+
     obj.trigger('ageChange'); // This should call our callback!
+
     Should log 'age changed'
 Caveats:
 * mixEvents should return the original object it was passed after extending it.
@@ -20,6 +24,7 @@ Caveats:
 * It is not necessary to write a way to remove listeners.
     var mixEvents = function(obj) {
       var events = {};
+
       obj.on = function (event, callback) {
         if (!events[event]) {
           events[event] = [callback];
@@ -27,6 +32,7 @@ Caveats:
           events[event].push(callback);
         }
       };
+
       obj.trigger = function (event) {
         var args = Array.prototype.slice.call(arguments, 1);
         if (events[event]) {
@@ -35,5 +41,6 @@ Caveats:
           });
         }
       };
+
       return obj;
     };
