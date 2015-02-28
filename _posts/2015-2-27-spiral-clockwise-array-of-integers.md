@@ -13,7 +13,7 @@ Write a function that accepts four arguments. The first two arguments are the si
 
     f(2, 4, 1, 2) // [ 2, 1, 5, 6, 7, 3, 8, 4 ]
 
-!(../images/spiral-array.png)
+![](../images/spiral-array.png)
 
 Return an array of integers obtained by spiralling outward anti-clockwise from the r and c, starting upward.
 
@@ -23,9 +23,9 @@ Return an array of integers obtained by spiralling outward anti-clockwise from t
       var board = [];
       // build the board
       for (var i = 0; i < h; i++) {
-      var row = [];
-      while (row.length < w) { row.push(begin++); }
-      board.push(row);
+        var row = [];
+        while (row.length < w) { row.push(begin++); }
+        board.push(row);
       }
 
       // run length for each direction
@@ -35,35 +35,35 @@ Return an array of integers obtained by spiralling outward anti-clockwise from t
 
       var positions = [];
       var recurse = function () {
-      // if the length is equal, then we have visited all possibilities
-      if (positions.length === h * w) { return; }
-      // direction up
-      for (var i = 0; i < run; i++) {
-        if (board[row] && board[row][col]) { positions.push(board[row][col]); }
-        row--;
-      }
-      // direction left
-      if (positions.length === h * w) { return; }
-      for (var i = 0; i < run; i++) {
-        if (board[row] && board[row][col]) { positions.push(board[row][col]); }
-        col--;
-      }
-      run++;
-      // direction down
-      if (positions.length === h * w) { return; }
-      for (var i = 0; i < run; i++) {
-        if (board[row] && board[row][col]) { positions.push(board[row][col]); }
-        row++;
-      }
-      // direction right
-      if (positions.length === h * w) { return; }
-      for (var i = 0; i < run; i++) {
-        if (board[row] && board[row][col]) { positions.push(board[row][col]); }
-        col++;
-      }
-      run++;
+        // if the length is equal, then we have visited all possibilities
+        if (positions.length === h * w) { return; }
+        // direction up
+        for (var i = 0; i < run; i++) {
+          if (board[row] && board[row][col]) { positions.push(board[row][col]); }
+          row--;
+        }
+        // direction left
+        if (positions.length === h * w) { return; }
+        for (var i = 0; i < run; i++) {
+          if (board[row] && board[row][col]) { positions.push(board[row][col]); }
+          col--;
+        }
+        run++;
+        // direction down
+        if (positions.length === h * w) { return; }
+        for (var i = 0; i < run; i++) {
+          if (board[row] && board[row][col]) { positions.push(board[row][col]); }
+          row++;
+        }
+        // direction right
+        if (positions.length === h * w) { return; }
+        for (var i = 0; i < run; i++) {
+          if (board[row] && board[row][col]) { positions.push(board[row][col]); }
+          col++;
+        }
+        run++;
 
-      recurse();
+        recurse();
       };
 
       recurse();
