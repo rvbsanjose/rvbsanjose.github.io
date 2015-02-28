@@ -13,7 +13,7 @@ Write a function that accepts four arguments. The first two arguments are the si
 
     f(2, 4, 1, 2) // [ 2, 1, 5, 6, 7, 3, 8, 4 ]
 
-    (../images/spiral-array.png)
+!(../images/spiral-array.png)
 
 Return an array of integers obtained by spiralling outward anti-clockwise from the r and c, starting upward.
 
