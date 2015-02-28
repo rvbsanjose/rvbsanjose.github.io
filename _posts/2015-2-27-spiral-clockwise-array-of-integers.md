@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Finding the number of leaves in a tree
+title: Array of integers obtained by spiralling outward anti-clockwise from the r and c, starting upward
 ---
 
-Recently, I found a great resource of toy problems on GitHub and wanted to take a stab at the following problem.
+Recently, I found a great resource of toy problems on [GitHub](https://github.com/blakeembrey/code-problems/tree/master/problems) and wanted to take a stab at the following problem.
 
 As a starting base to wrap my head around the problem and to see if I could spot any pattern, I used the whiteboard. What I found were two things.
 
