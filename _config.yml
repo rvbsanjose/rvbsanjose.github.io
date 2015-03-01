@@ -11,14 +11,10 @@ description: A left and right brain problem solver who engineers software and bl
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars1.githubusercontent.com/u/1013085?v=3&s=460
 
-#
-# Flags below are optional
-#
-
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: rvbsanjose@gmail.com
+  email:
   facebook: richard.vanbreemen
   flickr:
   github: rvbsanjose
@@ -29,15 +25,8 @@ footer-links:
   twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
-# Your disqus shortname, entering this will enable commenting on posts
-disqus:
-
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-59999493-1
-
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url:
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -60,10 +49,6 @@ version: v1.0.0
 sass:
   sass_dir: _scss
   style: :expanded # You might prefer to minify using :compressed
-
-# Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
 
 # Exclude these files from your production _site
 exclude:
