@@ -26,25 +26,25 @@ Caveats:
 * If `obj.trigger` is called with additional arguments, pass those to the listeners.
 * It is not necessary to write a way to remove listeners.
 
-    var mixEvents = function(obj) {
-      var events = {};
+        var mixEvents = function(obj) {
+          var events = {};
 
-      obj.on = function (event, callback) {
-        if (!events[event]) {
-          events[event] = [callback];
-        } else {
-          events[event].push(callback);
-        }
-      };
+          obj.on = function (event, callback) {
+            if (!events[event]) {
+              events[event] = [callback];
+            } else {
+              events[event].push(callback);
+            }
+          };
 
-      obj.trigger = function (event) {
-        var args = Array.prototype.slice.call(arguments, 1);
-        if (events[event]) {
-          events[event].forEach(function (cb) {
-            cb.apply(null, Array.prototype.slice.call(arguments, 1));
-          });
-        }
-      };
+          obj.trigger = function (event) {
+            var args = Array.prototype.slice.call(arguments, 1);
+            if (events[event]) {
+              events[event].forEach(function (cb) {
+                cb.apply(null, Array.prototype.slice.call(arguments, 1));
+              });
+            }
+          };
 
-      return obj;
-    };
+          return obj;
+        };
