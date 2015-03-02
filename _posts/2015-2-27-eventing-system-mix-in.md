@@ -41,7 +41,7 @@ Caveats:
             var args = Array.prototype.slice.call(arguments, 1);
             if (events[event]) {
               events[event].forEach(function (cb) {
-                cb.apply(null, Array.prototype.slice.call(arguments, 1));
+                cb.apply(null, args));
               });
             }
           };
